@@ -79,11 +79,7 @@ function getTransactions(){
                     <th scope="row">${item.date}</th>
                     <td>${item.value.toFixed(2)}</td>
                     <td>${type}</td>
-                    <td>${item.description}</td>
-                    <td>
-                    <div id="binbtn">
-                    <button class="btn bin"><i class="bi bi-trash"></i></button> </div>
-                    </td>
+                    <td>${item.description}</td>                                    
                     </tr>
             `
         });
@@ -93,12 +89,7 @@ function getTransactions(){
 
 }
 
-//function deletevent(){
-  //localStorage.removeItem(transactionshtml)
     
-
-
-document.getElementById("binbtn").addEventListener("click", deletevent);
 
 function saveData(data){
     localStorage.setItem(data.login, JSON.stringify(data));
